@@ -11,6 +11,7 @@ import {
   Menu,
   SlidersHorizontal,
   User,
+  Home,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,7 +36,7 @@ const SidebarLink = ({
     pathname === href || (pathname === "/" && href === "/dashboard");
 
   return (
-    <Link href={href}>
+    <Link href={href} prefetch={true}>
       <div
         className={`cursor-pointer flex items-center ${
           isCollapsed ? "justify-center py-4" : "justify-start px-8 py-4"
@@ -81,19 +82,20 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <Image
+        <Home className="w-27 h-27 rounded w-8"/>
+        {/*<Image
           src="https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/logo.png"
           alt="edstock-logo"
           width={27}
           height={27}
           className="rounded w-8"
-        />
+        />*/}
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
           } font-extrabold text-2xl`}
         >
-          EDSTOCK
+            Shamas Mabati
         </h1>
 
         <button
@@ -124,30 +126,29 @@ const Sidebar = () => {
           label="Products"
           isCollapsed={isSidebarCollapsed}
         />
-        <SidebarLink
+        {/*<SidebarLink
           href="/users"
           icon={User}
           label="Users"
           isCollapsed={isSidebarCollapsed}
-        />
+        />*/}
         <SidebarLink
           href="/settings"
           icon={SlidersHorizontal}
           label="Settings"
           isCollapsed={isSidebarCollapsed}
         />
-        <SidebarLink
+        {/*<SidebarLink
           href="/expenses"
           icon={CircleDollarSign}
           label="Expenses"
           isCollapsed={isSidebarCollapsed}
-        />
+        />*/}
       </div>
 
       {/* FOOTER */}
       <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
-        <p className="text-center text-xs text-gray-500">&copy; 2024 Edstock</p>
-      </div>
+        <p className="text-center text-xs text-gray-500">&copy; 2024 Shamas Mabati</p> </div>
     </div>
   );
 };

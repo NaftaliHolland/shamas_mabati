@@ -1,0 +1,121 @@
+{
+  "dashboard": {
+    "popularProducts": [
+      {
+        "productId": "p001",
+        "name": "Product 1",
+        "price": 100,
+        "rating": 4.5,
+        "stockQuantity": 20
+      },
+      {
+        "productId": "p002",
+        "name": "Product 2",
+        "price": 200,
+        "rating": 4,
+        "stockQuantity": 15
+      }
+    ],
+    "salesSummary": [
+      {
+        "salesSummaryId": "s001",
+        "totalValue": 5000,
+        "changePercentage": 10,
+        "date": "2024-11-25"
+      }
+    ],
+    "purchaseSummary": [
+      {
+        "purchaseSummaryId": "ps001",
+        "totalPurchased": 3000,
+        "changePercentage": -5,
+        "date": "2024-11-25"
+      }
+    ],
+    "expenseSummary": [
+      {
+        "expenseSummarId": "e001",
+        "totalExpenses": 1500,
+        "date": "2024-11-25"
+      }
+    ],
+    "expenseByCategorySummary": [
+      {
+        "expenseByCategorySummaryId": "ec001",
+        "category": "Marketing",
+        "amount": "500",
+        "date": "2024-11-25"
+      },
+      {
+        "expenseByCategorySummaryId": "ec002",
+        "category": "Operations",
+        "amount": "1000",
+        "date": "2024-11-25"
+      }
+    ]
+  },
+  "products": [
+    {
+      "productId": "p001",
+      "name": "Product 1",
+      "price": 100,
+      "rating": 4.5,
+      "stockQuantity": 20,
+      "id": "1d1d"
+    },
+    {
+      "productId": "p002",
+      "name": "Product 2",
+      "price": 200,
+      "rating": 4,
+      "stockQuantity": 15,
+      "id": "a641"
+    },
+    {
+      "id": "3555",
+      "productId": "5caca0f9-dcd7-4e7a-a484-9ff0b0199b9f",
+      "name": "New Mabati",
+      "price": 200,
+      "stockQuantity": 20,
+      "rating": 3
+    },
+    {
+      "id": "3bd4",
+      "productId": "653c0f4b-d928-4824-af66-0c29216ee0ea",
+      "name": "latest product",
+      "price": 3000,
+      "stockQuantity": 20,
+      "rating": 4
+    }
+  ],
+  "users": [
+    {
+      "userId": "u001",
+      "name": "User 1",
+      "email": "user1@example.com",
+      "id": "f0e3"
+    },
+    {
+      "userId": "u002",
+      "name": "User 2",
+      "email": "user2@example.com",
+      "id": "677f"
+    }
+  ],
+  "expenses": [
+    {
+      "expenseByCategorySummaryId": "ec001",
+      "category": "Marketing",
+      "amount": "500",
+      "date": "2024-11-25",
+      "id": "c04a"
+    },
+    {
+      "expenseByCategorySummaryId": "ec002",
+      "category": "Operations",
+      "amount": "1000",
+      "date": "2024-11-25",
+      "id": "7317"
+    }
+  ]
+}
